@@ -1,0 +1,92 @@
+.admin-layout {
+  min-height: 100vh;
+}
+
+.layout-sider {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.logo-container {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.layout-menu {
+  border-right: none;
+  padding: 12px 0;
+}
+
+.layout-header {
+  background: white;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.notification-badge {
+  cursor: pointer;
+}
+
+.notification-badge:hover {
+  opacity: 0.8;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.user-info:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.user-avatar {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.layout-content {
+  margin: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  min-height: 280px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .layout-sider {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  
+  .layout-header {
+    padding: 0 16px;
+  }
+  
+  .layout-content {
+    margin: 16px;
+    padding: 16px;
+  }
+} 
+ 
+ 
+ 
+ 

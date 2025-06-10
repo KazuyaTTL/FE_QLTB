@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* Ant Design overrides */
+.ant-btn-primary {
+  background-color: #1890ff !important;
+}
+
+.ant-card {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.ant-form-item-explain-error {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Custom styles */
+.login-form,
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Layout styles */
+.student-layout {
+  min-height: 100vh;
+}
+
+.layout-sider {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.logo-container {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.layout-menu {
+  border-right: none;
+  padding: 12px 0;
+}
+
+.layout-header {
+  background: white;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.layout-content {
+  margin: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  min-height: 280px;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+  padding: 24px;
+}
+
+.dashboard-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ant Design overrides */
+.ant-card {
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.ant-list-item {
+  padding: 12px !important;
+  border-radius: 6px;
+  margin: 4px 0;
+}
+
+.ant-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.ant-statistic-title {
+  margin-bottom: 8px !important;
+}
+
+.ant-statistic-content {
+  font-size: 24px !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .layout-sider {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  
+  .layout-header {
+    padding: 0 16px;
+  }
+  
+  .layout-content {
+    margin: 16px;
+    padding: 16px;
+  }
+  
+  .dashboard-container {
+    padding: 16px;
+  }
+}
+

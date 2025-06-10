@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 8C12 12.4183 16.4183 16.8366 20.8366 16.8366C25.2549 16.8366 29.6732 12.4183 29.6732 8" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M20.8366 16.8366V24" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+  <path d="M40 16H35.5L39.5 8H32.5" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="#1F2937">QLTB</text>
+</svg> 
+ 
+ 
+ 
+ 
