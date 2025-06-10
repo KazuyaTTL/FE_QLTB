@@ -7,8 +7,7 @@ import {
   HistoryOutlined,
   RightOutlined,
   InfoCircleOutlined,
-  UserOutlined,
-  AppstoreOutlined
+  UserOutlined
 } from '@ant-design/icons';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';

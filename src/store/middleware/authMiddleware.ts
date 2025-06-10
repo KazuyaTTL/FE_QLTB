@@ -11,7 +11,7 @@ let isCheckingToken = false;
 // Kiểm tra token khi ứng dụng khởi động
 listenerMiddleware.startListening({
   actionCreator: setCredentials,
-  effect: async (action, listenerApi) => {
+  effect: async (_, listenerApi) => {
     // Nếu đang kiểm tra token, bỏ qua
     if (isCheckingToken) return;
     
